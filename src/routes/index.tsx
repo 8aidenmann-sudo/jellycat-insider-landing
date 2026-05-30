@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import logo from "@/assets/jellycat-logo-new.png";
+import logo from "@/assets/JellyCat_Logo_PNG.png";
 import tSarah from "@/assets/testimonial-sarah.jpg";
 import tJess from "@/assets/testimonial-jess.webp";
 import tMaya from "@/assets/testimonial-maya.jpg";
@@ -77,7 +77,7 @@ function Index() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            height: 55,
+            height: 80,
             overflow: "hidden",
             marginBottom: 8,
           }}
@@ -87,8 +87,8 @@ function Index() {
             alt="Jellycat"
             style={{
               display: "block",
-              width: "40vw",
-              maxWidth: 160,
+              width: "65vw",
+              maxWidth: 280,
               height: "auto",
               objectFit: "contain",
               margin: 0,
