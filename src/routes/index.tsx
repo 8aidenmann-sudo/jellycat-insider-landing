@@ -152,15 +152,13 @@ function Index() {
               <div className="mt-3 flex flex-col gap-3">
                 <button
                   onClick={() => setChoice("adult")}
-                  className="jc-font jc-btn jc-btn-teal w-full py-3 text-[19px] text-white"
-                  style={{ fontWeight: 700 }}
+                  className="jc-font jc-btn jc-btn-teal w-full"
                 >
                   I'm 18 or older
                 </button>
                 <button
                   onClick={() => setChoice("minor")}
-                  className="jc-font jc-btn jc-btn-orange w-full py-3 text-[19px] text-white"
-                  style={{ fontWeight: 700 }}
+                  className="jc-font jc-btn jc-btn-orange w-full"
                 >
                   I'm under 18
                 </button>
@@ -176,8 +174,7 @@ function Index() {
                   : "You still qualify for an exclusive Jellycat discount 🤍"}
               </p>
               <button
-                className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full py-3 text-[19px] text-white"
-                style={{ fontWeight: 700 }}
+                className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full"
               >
                 Unlock My Reward
               </button>
