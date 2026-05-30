@@ -105,9 +105,6 @@ function Index() {
             <br />
             <span className="jc-orange">Jellycat Insider</span>
           </h1>
-          <p className="jc-font mt-1.5 text-[12px]" style={{ color: "#8a7c70" }}>
-            Find out what discount you qualify for 🤍
-          </p>
         </section>
 
         {/* How it works */}
@@ -143,14 +140,14 @@ function Index() {
                 <button
                   onClick={() => setChoice("adult")}
                   className="jc-font jc-btn jc-btn-teal w-full rounded-full py-4 text-[20px] text-white"
-                  style={{ fontWeight: 800 }}
+                  style={{ fontWeight: 700 }}
                 >
                   I'm 18 or older
                 </button>
                 <button
                   onClick={() => setChoice("minor")}
                   className="jc-font jc-btn jc-btn-orange w-full rounded-full py-4 text-[20px] text-white"
-                  style={{ fontWeight: 800 }}
+                  style={{ fontWeight: 700 }}
                 >
                   I'm under 18
                 </button>
@@ -165,7 +162,7 @@ function Index() {
                   ? "You qualify for our highest discount — up to $500 in Jellycat rewards 🤍"
                   : "You still qualify for an exclusive Jellycat discount 🤍"}
               </p>
-              <button className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full rounded-full py-4 text-[20px] text-white" style={{ fontWeight: 800 }}>
+              <button className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full rounded-full py-4 text-[20px] text-white" style={{ fontWeight: 700 }}>
                 Unlock My Reward
               </button>
             </div>
