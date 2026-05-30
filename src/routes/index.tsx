@@ -171,7 +171,7 @@ function Index() {
               <p className="jc-font jc-teal text-[14px] leading-snug px-2">
                 {choice === "adult"
                   ? "You qualify for our highest discount — up to $500 in Jellycat rewards"
-                  : "You still qualify for an exclusive Jellycat discount 🤍"}
+                  : "You still qualify for an exclusive Jellycat discount!"}
               </p>
               <button
                 className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full"
