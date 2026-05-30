@@ -170,7 +170,7 @@ function Index() {
             <div className="jc-fade-in">
               <p className="jc-font jc-teal text-[14px] leading-snug px-2">
                 {choice === "adult"
-                  ? "You qualify for our highest discount — up to $500 in Jellycat rewards 🤍"
+                  ? "You qualify for our highest discount — up to $500 in Jellycat rewards"
                   : "You still qualify for an exclusive Jellycat discount 🤍"}
               </p>
               <button
@@ -233,7 +233,7 @@ function Index() {
         <section className="mt-4 text-center">
           <p className="jc-font jc-teal text-[12px] italic">Join thousands of Jellycat lovers already saving</p>
           <p className="jc-font mt-1 text-[10.5px]" style={{ color: "#a89c8e" }}>
-            Limited spots available — rewards subject to eligibility
+            Limited spots available — Rewards subject to eligibility
           </p>
         </section>
       </div>
