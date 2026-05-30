@@ -1,6 +1,10 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
 import logo from "@/assets/jellycat-logo-new.png";
+import tSarah from "@/assets/testimonial-sarah.jpg";
+import tJess from "@/assets/testimonial-jess.webp";
+import tMaya from "@/assets/testimonial-maya.jpg";
+import tChloe from "@/assets/testimonial-chloe.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -18,24 +22,25 @@ export const Route = createFileRoute("/")({
 });
 
 const STEPS = [
-  "Complete the eligibility check below",
+  "Verify your eligibility below",
   'Click "Unlock My Reward" to get started',
   "Complete your quick survey",
-  "Complete the tasks given to you",
-  "Receive your personalized Jellycat discount code",
-  "Apply your discount to your next Jellycat purchase",
+  "Complete 6-10 short tasks to maximize your reward",
+  "Your personalized Jellycat discount code will be sent to your email",
 ];
 
 const TESTIMONIALS = [
   {
     q: "I had no idea this existed until my friend told me — I wish I found it sooner",
     n: "Sarah M., Jellycat Insider Member",
+    img: tSarah,
   },
-  { q: "Finally got my discount code and used it straight away — so worth it", n: "Jess T., Jellycat Insider Member" },
-  { q: "Honestly thought it was too good to be true but it actually worked", n: "Maya R., Jellycat Insider Member" },
+  { q: "Finally got my discount code and used it straight away — so worth it", n: "Jess T., Jellycat Insider Member", img: tJess },
+  { q: "Honestly thought it was too good to be true but it actually worked", n: "Maya R., Jellycat Insider Member", img: tMaya },
   {
     q: "Been obsessed with Jellycat for years and never knew this program existed",
     n: "Chloe W., Jellycat Insider Member",
+    img: tChloe,
   },
 ];
 
@@ -175,11 +180,18 @@ function Index() {
             className="rounded-2xl px-4 py-3 text-center"
             style={{ background: "#FFFBF3", border: "1px solid #f1e7d6" }}
           >
-            <div style={{ opacity: fade ? 1 : 0, transition: "opacity 0.25s" }}>
-              <p className="jc-font text-[12.5px] italic leading-snug" style={{ color: "#8a7c70" }}>
-                "{TESTIMONIALS[tIdx].q}"
-              </p>
-              <p className="jc-font jc-orange mt-1.5 text-[11.5px]">{TESTIMONIALS[tIdx].n}</p>
+            <div style={{ opacity: fade ? 1 : 0, transition: "opacity 0.25s", display: "flex", alignItems: "center", gap: 12, textAlign: "left" }}>
+              <img
+                src={TESTIMONIALS[tIdx].img}
+                alt={TESTIMONIALS[tIdx].n}
+                style={{ width: 48, height: 48, borderRadius: "50%", objectFit: "cover", border: "2px solid #f1e7d6", flexShrink: 0 }}
+              />
+              <div style={{ flex: 1 }}>
+                <p className="jc-font text-[12.5px] italic leading-snug" style={{ color: "#8a7c70" }}>
+                  "{TESTIMONIALS[tIdx].q}"
+                </p>
+                <p className="jc-font jc-orange mt-1.5 text-[11.5px]">{TESTIMONIALS[tIdx].n}</p>
+              </div>
             </div>
             <div className="mt-2 flex justify-center gap-1.5">
               {TESTIMONIALS.map((_, i) => (
