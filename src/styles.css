@@ -5,20 +5,6 @@
 
 @custom-variant dark (&:is(.dark *));
 
-/*
- * Design system definition.
- *
- * The @theme inline block maps CSS custom properties to Tailwind utility
- * classes (e.g. --color-primary -> bg-primary, text-primary).
- *
- * The :root and .dark blocks define the actual color values using oklch.
- * All colors MUST use oklch format.
- *
- * To add a new semantic color:
- * 1. Add the variable to :root (light value) and .dark (dark value)
- * 2. Register it in @theme inline as --color-<name>: var(--<name>)
- */
-
 @theme inline {
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
@@ -98,76 +84,65 @@
   --sidebar-ring: oklch(0.704 0.04 256.788);
 }
 
-.dark {
-  --background: oklch(0.129 0.042 264.695);
-  --foreground: oklch(0.984 0.003 247.858);
-  --card: oklch(0.208 0.042 265.755);
-  --card-foreground: oklch(0.984 0.003 247.858);
-  --popover: oklch(0.208 0.042 265.755);
-  --popover-foreground: oklch(0.984 0.003 247.858);
-  --primary: oklch(0.929 0.013 255.508);
-  --primary-foreground: oklch(0.208 0.042 265.755);
-  --secondary: oklch(0.279 0.041 260.031);
-  --secondary-foreground: oklch(0.984 0.003 247.858);
-  --muted: oklch(0.279 0.041 260.031);
-  --muted-foreground: oklch(0.704 0.04 256.788);
-  --accent: oklch(0.279 0.041 260.031);
-  --accent-foreground: oklch(0.984 0.003 247.858);
-  --destructive: oklch(0.704 0.191 22.216);
-  --destructive-foreground: oklch(0.984 0.003 247.858);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.551 0.027 264.364);
-  --chart-1: oklch(0.488 0.243 264.376);
-  --chart-2: oklch(0.696 0.17 162.48);
-  --chart-3: oklch(0.769 0.188 70.08);
-  --chart-4: oklch(0.627 0.265 303.9);
-  --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.208 0.042 265.755);
-  --sidebar-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-accent: oklch(0.279 0.041 260.031);
-  --sidebar-accent-foreground: oklch(0.984 0.003 247.858);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.551 0.027 264.364);
-}
-
 @layer base {
   * {
     border-color: var(--color-border);
   }
 
   body {
-    background-color: #FDF6EC;
+    background-color: #fdf6ec;
     color: #4a3f35;
     font-family: "Fredoka", system-ui, sans-serif;
     font-weight: 700;
   }
 }
 
-.jc-teal { color: #2BBCD4; }
-.jc-orange { color: #F5A623; }
-.jc-font { font-family: "Fredoka", system-ui, sans-serif; font-weight: 700; }
-
-@keyframes jc-fade-in { from { opacity: 0; transform: translateY(4px);} to { opacity: 1; transform: translateY(0);} }
-.jc-fade-in { animation: jc-fade-in 0.5s ease forwards; }
-
-.jc-btn { transition: transform 0.15s ease; }
-.jc-btn:active { transform: scale(1.04); }
-
-.jc-pill-inner-ring { box-shadow: inset 0 0 0 2px rgba(255,255,255,0.9); }
-.jc-btn-teal {
-  background-image: linear-gradient(180deg, #4ed2e8 0%, #2BBCD4 55%, #1fa6bd 100%);
-  box-shadow:
-    inset 0 0 0 2.5px rgba(255,255,255,0.95),
-    0 12px 28px -6px rgba(43,188,212,0.65),
-    0 4px 10px -2px rgba(43,188,212,0.45);
+.jc-teal {
+  color: #2bbcd4;
 }
-.jc-btn-orange {
-  background-image: linear-gradient(180deg, #ffbf52 0%, #F5A623 55%, #d98c0e 100%);
+.jc-orange {
+  color: #f5a623;
+}
+.jc-font {
+  font-family: "Fredoka", system-ui, sans-serif;
+  font-weight: 700;
+}
+
+@keyframes jc-fade-in {
+  from {
+    opacity: 0;
+    transform: translateY(4px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+.jc-fade-in {
+  animation: jc-fade-in 0.5s ease forwards;
+}
+
+.jc-btn {
+  transition: transform 0.15s ease;
+  cursor: pointer;
+}
+.jc-btn:hover {
+  transform: scale(1.03);
+}
+.jc-btn:active {
+  transform: scale(0.97);
+}
+
+.jc-btn-teal {
+  background-color: #2bbcd4;
   box-shadow:
-    inset 0 0 0 2.5px rgba(255,255,255,0.95),
-    0 12px 28px -6px rgba(245,166,35,0.65),
-    0 4px 10px -2px rgba(245,166,35,0.45);
+    inset 0 0 0 2.5px rgba(255, 255, 255, 0.85),
+    0 8px 20px -6px rgba(43, 188, 212, 0.5);
+}
+
+.jc-btn-orange {
+  background-color: #f5a623;
+  box-shadow:
+    inset 0 0 0 2.5px rgba(255, 255, 255, 0.85),
+    0 8px 20px -6px rgba(245, 166, 35, 0.5);
 }
