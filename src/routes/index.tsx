@@ -105,9 +105,6 @@ function Index() {
             <br />
             <span className="jc-orange">Jellycat Insider</span>
           </h1>
-          <p className="jc-font mt-1.5 text-[12px]" style={{ color: "#8a7c70" }}>
-            Find out what discount you qualify for 🤍
-          </p>
         </section>
 
         {/* How it works */}
