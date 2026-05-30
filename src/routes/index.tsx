@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import logo from "@/assets/jellycat-logo-new.png";
+import logo from "@/assets/JellyCat_Logo_PNG__1_.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -76,7 +76,7 @@ function Index() {
             maxWidth: 280,
             height: "auto",
             objectFit: "contain",
-            margin: "0 auto -32px",
+            margin: "0 auto 8px",
             padding: 0,
           }}
         />
