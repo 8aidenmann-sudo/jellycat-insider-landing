@@ -65,7 +65,7 @@ function Index() {
         />
 
         {/* Hero */}
-        <section className="relative -mt-2 text-center">
+        <section className="relative -mt-5 text-center">
           <Sparkle className="absolute left-2 top-3" color="#2BBCD4" />
           <Sparkle className="absolute right-3 top-6" color="#F5A623" />
           <Sparkle className="absolute left-8 bottom-2" color="#F5A623" />
