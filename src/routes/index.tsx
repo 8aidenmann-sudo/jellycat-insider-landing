@@ -77,7 +77,7 @@ function Index() {
             display: "flex",
             alignItems: "center",
             justifyContent: "center",
-            height: 80,
+            height: 55,
             overflow: "hidden",
             marginBottom: 8,
           }}
@@ -87,8 +87,8 @@ function Index() {
             alt="Jellycat"
             style={{
               display: "block",
-              width: "65vw",
-              maxWidth: 280,
+              width: "40vw",
+              maxWidth: 160,
               height: "auto",
               objectFit: "contain",
               margin: 0,
