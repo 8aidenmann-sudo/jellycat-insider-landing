@@ -8,7 +8,10 @@ export const Route = createFileRoute("/")({
       { title: "The Jellycat Insider — Rewards Program" },
       { name: "description", content: "Join 12,000+ Jellycat Insiders and unlock your exclusive Jellycat discount." },
       { property: "og:title", content: "The Jellycat Insider" },
-      { property: "og:description", content: "Join 12,000+ Jellycat Insiders and unlock your exclusive Jellycat discount." },
+      {
+        property: "og:description",
+        content: "Join 12,000+ Jellycat Insiders and unlock your exclusive Jellycat discount.",
+      },
     ],
   }),
   component: Index,
@@ -24,10 +27,16 @@ const STEPS = [
 ];
 
 const TESTIMONIALS = [
-  { q: "I had no idea this existed until my friend told me — I wish I found it sooner", n: "Sarah M., Jellycat Insider Member" },
+  {
+    q: "I had no idea this existed until my friend told me — I wish I found it sooner",
+    n: "Sarah M., Jellycat Insider Member",
+  },
   { q: "Finally got my discount code and used it straight away — so worth it", n: "Jess T., Jellycat Insider Member" },
   { q: "Honestly thought it was too good to be true but it actually worked", n: "Maya R., Jellycat Insider Member" },
-  { q: "Been obsessed with Jellycat for years and never knew this program existed", n: "Chloe W., Jellycat Insider Member" },
+  {
+    q: "Been obsessed with Jellycat for years and never knew this program existed",
+    n: "Chloe W., Jellycat Insider Member",
+  },
 ];
 
 function Sparkle({ className, color }: { className?: string; color: string }) {
@@ -61,7 +70,15 @@ function Index() {
         <img
           src={logo}
           alt="Jellycat"
-          style={{ display: "block", width: "65vw", maxWidth: 280, height: "auto", objectFit: "contain", margin: "0 auto 4px", padding: 0 }}
+          style={{
+            display: "block",
+            width: "65vw",
+            maxWidth: 280,
+            height: "auto",
+            objectFit: "contain",
+            margin: "0 auto -20px",
+            padding: 0,
+          }}
         />
 
         {/* Hero */}
@@ -135,9 +152,7 @@ function Index() {
                   ? "You qualify for our highest discount — up to $500 in Jellycat rewards 🤍"
                   : "You still qualify for an exclusive Jellycat discount 🤍"}
               </p>
-              <button
-                className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full rounded-full py-4 text-[18px] text-white"
-              >
+              <button className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full rounded-full py-4 text-[18px] text-white">
                 Unlock My Reward
               </button>
             </div>
