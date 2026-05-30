@@ -35,8 +35,16 @@ const TESTIMONIALS = [
     n: "Sarah M., Jellycat Insider Member",
     img: tSarah,
   },
-  { q: "Finally got my discount code and used it straight away — so worth it", n: "Jess T., Jellycat Insider Member", img: tJess },
-  { q: "Honestly thought it was too good to be true but it actually worked", n: "Maya R., Jellycat Insider Member", img: tMaya },
+  {
+    q: "Finally got my discount code and used it straight away — so worth it",
+    n: "Jess T., Jellycat Insider Member",
+    img: tJess,
+  },
+  {
+    q: "Honestly thought it was too good to be true but it actually worked",
+    n: "Maya R., Jellycat Insider Member",
+    img: tMaya,
+  },
   {
     q: "Been obsessed with Jellycat for years and never knew this program existed",
     n: "Chloe W., Jellycat Insider Member",
@@ -144,14 +152,14 @@ function Index() {
               <div className="mt-3 flex flex-col gap-3">
                 <button
                   onClick={() => setChoice("adult")}
-                  className="jc-font jc-btn jc-btn-teal w-full rounded-full py-3 text-[20px] text-white"
+                  className="jc-font jc-btn jc-btn-teal w-full py-3 text-[19px] text-white"
                   style={{ fontWeight: 700 }}
                 >
                   I'm 18 or older
                 </button>
                 <button
                   onClick={() => setChoice("minor")}
-                  className="jc-font jc-btn jc-btn-orange w-full rounded-full py-3 text-[20px] text-white"
+                  className="jc-font jc-btn jc-btn-orange w-full py-3 text-[19px] text-white"
                   style={{ fontWeight: 700 }}
                 >
                   I'm under 18
@@ -167,7 +175,10 @@ function Index() {
                   ? "You qualify for our highest discount — up to $500 in Jellycat rewards 🤍"
                   : "You still qualify for an exclusive Jellycat discount 🤍"}
               </p>
-              <button className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full rounded-full py-3 text-[20px] text-white" style={{ fontWeight: 700 }}>
+              <button
+                className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full py-3 text-[19px] text-white"
+                style={{ fontWeight: 700 }}
+              >
                 Unlock My Reward
               </button>
             </div>
@@ -180,11 +191,27 @@ function Index() {
             className="rounded-2xl px-4 py-3 text-center"
             style={{ background: "#FFFBF3", border: "1px solid #f1e7d6" }}
           >
-            <div style={{ opacity: fade ? 1 : 0, transition: "opacity 0.25s", display: "flex", alignItems: "center", gap: 12, textAlign: "left" }}>
+            <div
+              style={{
+                opacity: fade ? 1 : 0,
+                transition: "opacity 0.25s",
+                display: "flex",
+                alignItems: "center",
+                gap: 12,
+                textAlign: "left",
+              }}
+            >
               <img
                 src={TESTIMONIALS[tIdx].img}
                 alt={TESTIMONIALS[tIdx].n}
-                style={{ width: 48, height: 48, borderRadius: "50%", objectFit: "cover", border: "2px solid #f1e7d6", flexShrink: 0 }}
+                style={{
+                  width: 48,
+                  height: 48,
+                  borderRadius: "50%",
+                  objectFit: "cover",
+                  border: "2px solid #f1e7d6",
+                  flexShrink: 0,
+                }}
               />
               <div style={{ flex: 1 }}>
                 <p className="jc-font text-[12.5px] italic leading-snug" style={{ color: "#8a7c70" }}>
