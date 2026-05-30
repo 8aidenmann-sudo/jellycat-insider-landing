@@ -61,11 +61,11 @@ function Index() {
         <img
           src={logo}
           alt="Jellycat"
-          style={{ display: "block", width: "65vw", maxWidth: 280, height: "auto", objectFit: "contain", margin: "0 auto" }}
+          style={{ display: "block", width: "65vw", maxWidth: 280, height: "auto", objectFit: "contain", margin: "0 auto 4px", padding: 0 }}
         />
 
         {/* Hero */}
-        <section className="relative -mt-5 text-center">
+        <section className="relative text-center">
           <Sparkle className="absolute left-2 top-3" color="#2BBCD4" />
           <Sparkle className="absolute right-3 top-6" color="#F5A623" />
           <Sparkle className="absolute left-8 bottom-2" color="#F5A623" />
@@ -114,15 +114,13 @@ function Index() {
               <div className="mt-3 flex flex-col gap-3">
                 <button
                   onClick={() => setChoice("adult")}
-                  className="jc-font jc-btn jc-shadow-teal w-full rounded-full py-3.5 text-[16px] text-white"
-                  style={{ background: "#2BBCD4" }}
+                  className="jc-font jc-btn jc-btn-teal w-full rounded-full py-4 text-[18px] text-white"
                 >
                   I'm 18 or older
                 </button>
                 <button
                   onClick={() => setChoice("minor")}
-                  className="jc-font jc-btn jc-shadow-orange w-full rounded-full py-3.5 text-[16px] text-white"
-                  style={{ background: "#F5A623" }}
+                  className="jc-font jc-btn jc-btn-orange w-full rounded-full py-4 text-[18px] text-white"
                 >
                   I'm under 18
                 </button>
@@ -138,8 +136,7 @@ function Index() {
                   : "You still qualify for an exclusive Jellycat discount 🤍"}
               </p>
               <button
-                className="jc-font jc-btn jc-shadow-orange jc-fade-in mt-3 w-full rounded-full py-3.5 text-[16px] text-white"
-                style={{ background: "#F5A623" }}
+                className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full rounded-full py-4 text-[18px] text-white"
               >
                 Unlock My Reward
               </button>
