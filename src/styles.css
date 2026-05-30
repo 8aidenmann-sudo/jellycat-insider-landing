@@ -133,16 +133,23 @@
   transform: scale(0.97);
 }
 
+.jc-btn-teal,
+.jc-btn-orange {
+  border: none;
+  border-radius: 14px;
+  padding: 14px 24px;
+  font-family: "Fredoka", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  color: white;
+  width: 100%;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.12);
+}
+
 .jc-btn-teal {
   background-color: #2bbcd4;
-  border-radius: 16px;
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 4px 12px rgba(43, 188, 212, 0.35);
 }
 
 .jc-btn-orange {
   background-color: #f5a623;
-  border-radius: 16px;
-  border: 2px solid rgba(255, 255, 255, 0.25);
-  box-shadow: 0 4px 12px rgba(245, 166, 35, 0.35);
 }
