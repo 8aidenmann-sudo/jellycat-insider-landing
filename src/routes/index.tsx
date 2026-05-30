@@ -67,19 +67,30 @@ function Index() {
     <main className="min-h-screen w-full px-5 pb-8 pt-3" style={{ backgroundColor: "#FDF6EC" }}>
       <div className="mx-auto w-full max-w-md">
         {/* Logo */}
-        <img
-          src={logo}
-          alt="Jellycat"
+        <div
           style={{
-            display: "block",
-            width: "65vw",
-            maxWidth: 280,
-            height: "auto",
-            objectFit: "contain",
-            margin: "0 auto 8px",
-            padding: 0,
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+            height: 80,
+            overflow: "hidden",
+            marginBottom: 8,
           }}
-        />
+        >
+          <img
+            src={logo}
+            alt="Jellycat"
+            style={{
+              display: "block",
+              width: "65vw",
+              maxWidth: 280,
+              height: "auto",
+              objectFit: "contain",
+              margin: 0,
+              padding: 0,
+            }}
+          />
+        </div>
 
         {/* Hero */}
         <section className="relative text-center">
