@@ -1,6 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { useEffect, useState } from "react";
-import logo from "@/assets/JellyCat_Logo_PNG.png";
+import logo from "@/assets/JellyCat_Logo_PNG__1_.png";
 
 export const Route = createFileRoute("/")({
   head: () => ({
