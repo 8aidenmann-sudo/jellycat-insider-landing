@@ -232,8 +232,7 @@ function Index() {
 
         {/* Closing */}
         <section className="mt-4 text-center">
-          <p className="jc-font jc-teal text-[12px] italic">Join thousands of Jellycat lovers already saving</p>
-          <p className="jc-font mt-1 text-[10.5px]" style={{ color: "#a89c8e" }}>
+          <p className="jc-font text-[10.5px]" style={{ color: "#a89c8e" }}>
             Limited spots available — Rewards subject to eligibility
           </p>
         </section>
