@@ -125,7 +125,7 @@ function Index() {
 
         {/* How it works */}
         <section className="mt-4">
-          <p className="jc-font jc-teal text-center text-[11px] tracking-[0.18em]" style={{ textShadow: "2px 2px 0px #0a0a0a" }}>HOW IT WORKS</p>
+          <p className="jc-font jc-teal text-center text-[11px] tracking-[0.18em]" style={{ textShadow: "3px 3px 0px #0a0a0a" }}>HOW IT WORKS</p>
           <ul className="mt-2 space-y-1.5">
             {STEPS.map((s, i) => (
               <li
