@@ -52,9 +52,12 @@ const TESTIMONIALS = [
   },
 ];
 
-function Sparkle({ className, color, shadow }: { className?: string; color: string; shadow?: string }) {
+function Sparkle({ className, color }: { className?: string; color: string }) {
   return (
-    <svg className={className} width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden style={shadow ? { filter: `drop-shadow(${shadow})` } : undefined}>
+    <svg className={className} width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+      <g transform="translate(2,2)">
+        <path d="M12 2l1.6 6.4L20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6L12 2z" fill="#0a0a0a" />
+      </g>
       <path d="M12 2l1.6 6.4L20 10l-6.4 1.6L12 18l-1.6-6.4L4 10l6.4-1.6L12 2z" fill={color} opacity="0.55" />
     </svg>
   );
