@@ -136,7 +136,7 @@ function Index() {
                 >
                   {i + 1}
                 </span>
-                <span className="jc-font text-[12.5px] leading-tight" style={{ color: "#4a3f35" }}>
+                <span className="jc-font text-[12.5px] leading-tight whitespace-pre-wrap" style={{ color: "#4a3f35" }}>
                   {s}
                 </span>
               </li>
