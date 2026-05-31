@@ -127,7 +127,7 @@ function Index() {
             {STEPS.map((s, i) => (
               <li
                 key={i}
-                className="flex items-start gap-2.5 rounded-full px-2 py-1.5"
+                className="flex items-center gap-2.5 rounded-full px-2 py-1.5"
                 style={{ background: "#FFFBF3", border: "1px solid #f1e7d6" }}
               >
                 <span
