@@ -23,8 +23,8 @@ export const Route = createFileRoute("/")({
 
 const STEPS = [
   "Verify Your Age",
-  'Click "Unlock Reward"',
   "Complete Our Quick Survey",
+  "Sign Up Via Email",
   "Complete 6-10 Tasks Given",
   "Enjoy Jellycat Without Paying Extra\n",
 ];
