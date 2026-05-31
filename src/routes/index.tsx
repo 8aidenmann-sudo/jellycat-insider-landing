@@ -174,7 +174,7 @@ function Index() {
                   : "You still qualify for an exclusive Jellycat discount!"}
               </p>
               <button
-                onClick={() => window.location.href = "https://trksy.org/aff_c?offer_id=4212&aff_id=162732&source=Jellycat"}
+                onClick={() => window.location.href = "https://linkthem.net/aff_c?offer_id=4212&aff_id=162732&source=Jelly"}
                 className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full"
               >
                 Unlock My Reward
