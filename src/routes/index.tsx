@@ -110,10 +110,10 @@ function Index() {
 
         {/* Hero */}
         <section className="relative text-center">
-          <Sparkle className="absolute left-2 top-3" color="#2BBCD4" shadow="2px 2px 0px #0a0a0a" />
-          <Sparkle className="absolute right-3 top-6" color="#F5A623" shadow="2px 2px 0px #0a0a0a" />
-          <Sparkle className="absolute left-8 bottom-2" color="#F5A623" shadow="2px 2px 0px #0a0a0a" />
-          <Sparkle className="absolute right-6 bottom-4" color="#2BBCD4" shadow="2px 2px 0px #0a0a0a" />
+          <Sparkle className="absolute left-2 top-3" color="#2BBCD4" />
+          <Sparkle className="absolute right-3 top-6" color="#F5A623" />
+          <Sparkle className="absolute left-8 bottom-2" color="#F5A623" />
+          <Sparkle className="absolute right-6 bottom-4" color="#2BBCD4" />
 
           <p className="jc-font jc-teal text-[13px]" style={{ textShadow: "1.5px 1.5px 0px #0a0a0a" }}>Join 12,000+ Jellycat Insiders</p>
           <h1 className="jc-font mt-1 text-[26px] leading-[1.15]" style={{ textShadow: "2px 2px 0px #0a0a0a" }}>
