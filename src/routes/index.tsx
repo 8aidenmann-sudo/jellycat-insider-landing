@@ -22,11 +22,11 @@ export const Route = createFileRoute("/")({
 });
 
 const STEPS = [
-  "Verify your eligibility below",
-  'Click "Unlock My Reward" to get started',
-  "Complete your quick survey",
-  "Complete 6-10 short tasks to maximize your reward",
-  "Your personalized Jellycat discount code will be sent to your email",
+  "Verify Your Age",
+  'Click "Unlock Reward"',
+  "Complete Our Quick Survey",
+  "Complete 6-10 Tasks Given",
+  "Enjoy Jellycat Without Spending Extra",
 ];
 
 const TESTIMONIALS = [
