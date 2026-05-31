@@ -213,7 +213,7 @@ function Index() {
                   height: 48,
                   borderRadius: 0,
                   objectFit: "cover",
-                  border: "2px solid #f1e7d6",
+                  border: "4px solid #f1e7d6",
                   flexShrink: 0,
                 }}
               />
