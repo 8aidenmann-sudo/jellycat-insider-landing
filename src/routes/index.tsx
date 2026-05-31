@@ -211,7 +211,7 @@ function Index() {
                 style={{
                   width: 48,
                   height: 48,
-                  borderRadius: "50%",
+                  borderRadius: 0,
                   objectFit: "cover",
                   border: "2px solid #f1e7d6",
                   flexShrink: 0,
