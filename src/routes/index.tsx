@@ -112,8 +112,8 @@ function Index() {
           <Sparkle className="absolute left-8 bottom-2" color="#F5A623" />
           <Sparkle className="absolute right-6 bottom-4" color="#2BBCD4" />
 
-          <p className="jc-font jc-teal text-[13px]" style={{ textShadow: "2px 2px 0px #1a1a1a" }}>Join 12,000+ Jellycat Insiders</p>
-          <h1 className="jc-font mt-1 text-[26px] leading-[1.15]" style={{ textShadow: "2px 2px 0px #1a1a1a" }}>
+          <p className="jc-font jc-teal text-[13px]" style={{ textShadow: "1px 1px 0px #0d0d0d" }}>Join 12,000+ Jellycat Insiders</p>
+          <h1 className="jc-font mt-1 text-[26px] leading-[1.15]" style={{ textShadow: "1px 1px 0px #0d0d0d" }}>
             <span className="jc-teal">Welcome to The</span>
             <br />
             <span className="jc-orange">Jellycat Insider</span>
@@ -122,7 +122,7 @@ function Index() {
 
         {/* How it works */}
         <section className="mt-4">
-          <p className="jc-font jc-teal text-center text-[11px] tracking-[0.18em]" style={{ textShadow: "2px 2px 0px #1a1a1a" }}>HOW IT WORKS</p>
+          <p className="jc-font jc-teal text-center text-[11px] tracking-[0.18em]" style={{ textShadow: "1px 1px 0px #0d0d0d" }}>HOW IT WORKS</p>
           <ul className="mt-2 space-y-1.5">
             {STEPS.map((s, i) => (
               <li
@@ -132,7 +132,7 @@ function Index() {
               >
                 <span
                   className="jc-font flex h-7 w-7 shrink-0 items-center justify-center rounded-full text-[13px] text-white"
-                  style={{ background: "#2BBCD4", boxShadow: "2px 2px 0px #1a1a1a", textShadow: "2px 2px 0px #1a1a1a" }}
+                  style={{ background: "#2BBCD4", boxShadow: "1px 1px 0px #0d0d0d", textShadow: "1px 1px 0px #0d0d0d" }}
                 >
                   {i + 1}
                 </span>
@@ -153,14 +153,14 @@ function Index() {
                 <button
                   onClick={() => setChoice("adult")}
                   className="jc-font jc-btn jc-btn-teal w-full"
-                  style={{ textShadow: "2px 2px 0px #1a1a1a" }}
+                  style={{ textShadow: "1px 1px 0px #0d0d0d" }}
                 >
                   I'm 18 or older
                 </button>
                 <button
                   onClick={() => setChoice("minor")}
                   className="jc-font jc-btn jc-btn-orange w-full"
-                  style={{ textShadow: "2px 2px 0px #1a1a1a" }}
+                  style={{ textShadow: "1px 1px 0px #0d0d0d" }}
                 >
                   I'm under 18
                 </button>
@@ -178,7 +178,7 @@ function Index() {
               <button
                 onClick={() => window.location.href = "https://linkthem.net/aff_c?offer_id=4212&aff_id=162732&source=Jelly"}
                 className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full"
-                style={{ textShadow: "2px 2px 0px #1a1a1a" }}
+                style={{ textShadow: "1px 1px 0px #0d0d0d" }}
               >
                 Continue Here
               </button>
