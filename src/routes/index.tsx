@@ -112,7 +112,7 @@ function Index() {
           <Sparkle className="absolute left-8 bottom-2" color="#F5A623" />
           <Sparkle className="absolute right-6 bottom-4" color="#2BBCD4" />
 
-          <p className="jc-font jc-teal text-[13px]" style={{ textShadow: "1px 1px 0px #0a0a0a" }}>Join 12,000+ Jellycat Insiders</p>
+          <p className="jc-font jc-teal text-[13px]" style={{ textShadow: "2px 2px 0px #0a0a0a" }}>Join 12,000+ Jellycat Insiders</p>
           <h1 className="jc-font mt-1 text-[26px] leading-[1.15]" style={{ textShadow: "2px 2px 0px #0a0a0a" }}>
             <span className="jc-teal">Welcome to The</span>
             <br />
