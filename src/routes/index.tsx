@@ -26,7 +26,7 @@ const STEPS = [
   'Click "Unlock Reward"',
   "Complete Our Quick Survey",
   "Complete 6-10 Tasks Given",
-  "Enjoy Jellycat\nWithout Spending Extra",
+  "\nEnjoy Jellycat Without Spending Extra",
 ];
 
 const TESTIMONIALS = [
