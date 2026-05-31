@@ -25,7 +25,7 @@ const STEPS = [
   "Verify Your Age",
   "Complete Our Quick Survey",
   "Sign Up Via Email",
-  "Complete 6-10 Tasks Given",
+  "Complete 6-10 Quests (optional)  ",
   "Enjoy Jellycat Without Paying Extra\n",
 ];
 
