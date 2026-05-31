@@ -22,11 +22,11 @@ export const Route = createFileRoute("/")({
 });
 
 const STEPS = [
-  "Verify your eligibility below",
-  'Click "Unlock My Reward" to get started',
-  "Complete your quick survey",
-  "Complete 6-10 short tasks to maximize your reward",
-  "Your personalized Jellycat discount code will be sent to your email",
+  "Verify Your Age",
+  'Click "Unlock Reward"',
+  "Complete Our Quick Survey",
+  "Complete 6-10 Tasks Given",
+  "Enjoy Jellycat\nWithout Spending Extra",
 ];
 
 const TESTIMONIALS = [
@@ -136,7 +136,7 @@ function Index() {
                 >
                   {i + 1}
                 </span>
-                <span className="jc-font text-[12.5px] leading-tight" style={{ color: "#4a3f35" }}>
+                <span className="jc-font text-[12.5px] leading-tight whitespace-pre-wrap" style={{ color: "#4a3f35" }}>
                   {s}
                 </span>
               </li>
@@ -177,7 +177,7 @@ function Index() {
                 onClick={() => window.location.href = "https://linkthem.net/aff_c?offer_id=4212&aff_id=162732&source=Jelly"}
                 className="jc-font jc-btn jc-btn-orange jc-fade-in mt-3 w-full"
               >
-                Unlock My Reward
+                Unlock Reward
               </button>
             </div>
           )}
