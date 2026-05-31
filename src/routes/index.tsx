@@ -148,7 +148,7 @@ function Index() {
         <section className="mt-5 text-center">
           {choice === null && (
             <>
-              <p className="jc-font jc-teal text-[13px]">Check your eligibility to claim your discount</p>
+              <p className="jc-font jc-teal text-[13px] whitespace-pre-wrap">{"\n"}</p>
               <div className="mt-3 flex flex-col gap-3">
                 <button
                   onClick={() => setChoice("adult")}
